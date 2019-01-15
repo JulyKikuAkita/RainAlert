@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12609DB121EEA39300BB5961 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12609DB021EEA39300BB5961 /* ApiRequest.swift */; };
 		AB7C30C621EDC97C00A8D9A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */; };
 		AB7C30C821EDC97D00A8D9A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */; };
 		AB7C30CB21EDC97D00A8D9A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7C30C921EDC97D00A8D9A1 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12609DB021EEA39300BB5961 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		AB7C30C221EDC97C00A8D9A1 /* RainAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12609DAD21EEA34200BB5961 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12609DAE21EEA34700BB5961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = RainAlert/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		12609DAF21EEA34D00BB5961 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12609DB021EEA39300BB5961 /* ApiRequest.swift */,
+			);
+			name = Controllers;
+			path = RainAlert/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
 		AB7C30B921EDC97C00A8D9A1 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,9 @@
 		AB7C30C421EDC97C00A8D9A1 /* RainAlert */ = {
 			isa = PBXGroup;
 			children = (
+				12609DAE21EEA34700BB5961 /* Views */,
+				12609DAF21EEA34D00BB5961 /* Controllers */,
+				12609DAD21EEA34200BB5961 /* Models */,
 				AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */,
 				AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */,
 				AB7C30C921EDC97D00A8D9A1 /* Main.storyboard */,
@@ -261,6 +290,7 @@
 			files = (
 				AB7C30C821EDC97D00A8D9A1 /* ViewController.swift in Sources */,
 				AB7C30C621EDC97C00A8D9A1 /* AppDelegate.swift in Sources */,
+				12609DB121EEA39300BB5961 /* ApiRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
