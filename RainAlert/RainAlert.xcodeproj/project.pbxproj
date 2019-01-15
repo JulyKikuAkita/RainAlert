@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB7C30C621EDC97C00A8D9A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */; };
+		AB7C30C821EDC97D00A8D9A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */; };
+		AB7C30CB21EDC97D00A8D9A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7C30C921EDC97D00A8D9A1 /* Main.storyboard */; };
+		AB7C30CD21EDC97D00A8D9A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7C30CC21EDC97D00A8D9A1 /* Assets.xcassets */; };
+		AB7C30D021EDC97D00A8D9A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7C30CE21EDC97D00A8D9A1 /* LaunchScreen.storyboard */; };
+		AB7C30DB21EDC97D00A8D9A1 /* RainAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30DA21EDC97D00A8D9A1 /* RainAlertTests.swift */; };
+		AB7C30E621EDC97D00A8D9A1 /* RainAlertUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C30E521EDC97D00A8D9A1 /* RainAlertUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB7C30D721EDC97D00A8D9A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7C30BA21EDC97C00A8D9A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7C30C121EDC97C00A8D9A1;
+			remoteInfo = RainAlert;
+		};
+		AB7C30E221EDC97D00A8D9A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7C30BA21EDC97C00A8D9A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7C30C121EDC97C00A8D9A1;
+			remoteInfo = RainAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB7C30C221EDC97C00A8D9A1 /* RainAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB7C30CA21EDC97D00A8D9A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB7C30CC21EDC97D00A8D9A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB7C30CF21EDC97D00A8D9A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB7C30D121EDC97D00A8D9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7C30D621EDC97D00A8D9A1 /* RainAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C30DA21EDC97D00A8D9A1 /* RainAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainAlertTests.swift; sourceTree = "<group>"; };
+		AB7C30DC21EDC97D00A8D9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7C30E121EDC97D00A8D9A1 /* RainAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RainAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7C30E521EDC97D00A8D9A1 /* RainAlertUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainAlertUITests.swift; sourceTree = "<group>"; };
+		AB7C30E721EDC97D00A8D9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB7C30BF21EDC97C00A8D9A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30D321EDC97D00A8D9A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30DE21EDC97D00A8D9A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB7C30B921EDC97C00A8D9A1 = {
+			isa = PBXGroup;
+			children = (
+				AB7C30C421EDC97C00A8D9A1 /* RainAlert */,
+				AB7C30D921EDC97D00A8D9A1 /* RainAlertTests */,
+				AB7C30E421EDC97D00A8D9A1 /* RainAlertUITests */,
+				AB7C30C321EDC97C00A8D9A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7C30C321EDC97C00A8D9A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C30C221EDC97C00A8D9A1 /* RainAlert.app */,
+				AB7C30D621EDC97D00A8D9A1 /* RainAlertTests.xctest */,
+				AB7C30E121EDC97D00A8D9A1 /* RainAlertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7C30C421EDC97C00A8D9A1 /* RainAlert */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C30C521EDC97C00A8D9A1 /* AppDelegate.swift */,
+				AB7C30C721EDC97D00A8D9A1 /* ViewController.swift */,
+				AB7C30C921EDC97D00A8D9A1 /* Main.storyboard */,
+				AB7C30CC21EDC97D00A8D9A1 /* Assets.xcassets */,
+				AB7C30CE21EDC97D00A8D9A1 /* LaunchScreen.storyboard */,
+				AB7C30D121EDC97D00A8D9A1 /* Info.plist */,
+			);
+			path = RainAlert;
+			sourceTree = "<group>";
+		};
+		AB7C30D921EDC97D00A8D9A1 /* RainAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C30DA21EDC97D00A8D9A1 /* RainAlertTests.swift */,
+				AB7C30DC21EDC97D00A8D9A1 /* Info.plist */,
+			);
+			path = RainAlertTests;
+			sourceTree = "<group>";
+		};
+		AB7C30E421EDC97D00A8D9A1 /* RainAlertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7C30E521EDC97D00A8D9A1 /* RainAlertUITests.swift */,
+				AB7C30E721EDC97D00A8D9A1 /* Info.plist */,
+			);
+			path = RainAlertUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB7C30C121EDC97C00A8D9A1 /* RainAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C30EA21EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlert" */;
+			buildPhases = (
+				AB7C30BE21EDC97C00A8D9A1 /* Sources */,
+				AB7C30BF21EDC97C00A8D9A1 /* Frameworks */,
+				AB7C30C021EDC97C00A8D9A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RainAlert;
+			productName = RainAlert;
+			productReference = AB7C30C221EDC97C00A8D9A1 /* RainAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB7C30D521EDC97D00A8D9A1 /* RainAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C30ED21EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlertTests" */;
+			buildPhases = (
+				AB7C30D221EDC97D00A8D9A1 /* Sources */,
+				AB7C30D321EDC97D00A8D9A1 /* Frameworks */,
+				AB7C30D421EDC97D00A8D9A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7C30D821EDC97D00A8D9A1 /* PBXTargetDependency */,
+			);
+			name = RainAlertTests;
+			productName = RainAlertTests;
+			productReference = AB7C30D621EDC97D00A8D9A1 /* RainAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB7C30E021EDC97D00A8D9A1 /* RainAlertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7C30F021EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlertUITests" */;
+			buildPhases = (
+				AB7C30DD21EDC97D00A8D9A1 /* Sources */,
+				AB7C30DE21EDC97D00A8D9A1 /* Frameworks */,
+				AB7C30DF21EDC97D00A8D9A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7C30E321EDC97D00A8D9A1 /* PBXTargetDependency */,
+			);
+			name = RainAlertUITests;
+			productName = RainAlertUITests;
+			productReference = AB7C30E121EDC97D00A8D9A1 /* RainAlertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7C30BA21EDC97C00A8D9A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = July;
+				TargetAttributes = {
+					AB7C30C121EDC97C00A8D9A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					AB7C30D521EDC97D00A8D9A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB7C30C121EDC97C00A8D9A1;
+					};
+					AB7C30E021EDC97D00A8D9A1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AB7C30C121EDC97C00A8D9A1;
+					};
+				};
+			};
+			buildConfigurationList = AB7C30BD21EDC97C00A8D9A1 /* Build configuration list for PBXProject "RainAlert" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB7C30B921EDC97C00A8D9A1;
+			productRefGroup = AB7C30C321EDC97C00A8D9A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7C30C121EDC97C00A8D9A1 /* RainAlert */,
+				AB7C30D521EDC97D00A8D9A1 /* RainAlertTests */,
+				AB7C30E021EDC97D00A8D9A1 /* RainAlertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB7C30C021EDC97C00A8D9A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C30D021EDC97D00A8D9A1 /* LaunchScreen.storyboard in Resources */,
+				AB7C30CD21EDC97D00A8D9A1 /* Assets.xcassets in Resources */,
+				AB7C30CB21EDC97D00A8D9A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30D421EDC97D00A8D9A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30DF21EDC97D00A8D9A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB7C30BE21EDC97C00A8D9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C30C821EDC97D00A8D9A1 /* ViewController.swift in Sources */,
+				AB7C30C621EDC97C00A8D9A1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30D221EDC97D00A8D9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C30DB21EDC97D00A8D9A1 /* RainAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7C30DD21EDC97D00A8D9A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7C30E621EDC97D00A8D9A1 /* RainAlertUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB7C30D821EDC97D00A8D9A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7C30C121EDC97C00A8D9A1 /* RainAlert */;
+			targetProxy = AB7C30D721EDC97D00A8D9A1 /* PBXContainerItemProxy */;
+		};
+		AB7C30E321EDC97D00A8D9A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7C30C121EDC97C00A8D9A1 /* RainAlert */;
+			targetProxy = AB7C30E221EDC97D00A8D9A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB7C30C921EDC97D00A8D9A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7C30CA21EDC97D00A8D9A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB7C30CE21EDC97D00A8D9A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7C30CF21EDC97D00A8D9A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB7C30E821EDC97D00A8D9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB7C30E921EDC97D00A8D9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB7C30EB21EDC97D00A8D9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA8FE3RZ75;
+				INFOPLIST_FILE = RainAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB7C30EC21EDC97D00A8D9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA8FE3RZ75;
+				INFOPLIST_FILE = RainAlert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AB7C30EE21EDC97D00A8D9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW53774SL6;
+				INFOPLIST_FILE = RainAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainAlert.app/RainAlert";
+			};
+			name = Debug;
+		};
+		AB7C30EF21EDC97D00A8D9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW53774SL6;
+				INFOPLIST_FILE = RainAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RainAlert.app/RainAlert";
+			};
+			name = Release;
+		};
+		AB7C30F121EDC97D00A8D9A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW53774SL6;
+				INFOPLIST_FILE = RainAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RainAlert;
+			};
+			name = Debug;
+		};
+		AB7C30F221EDC97D00A8D9A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CW53774SL6;
+				INFOPLIST_FILE = RainAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = julykikuakita.RainAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RainAlert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB7C30BD21EDC97C00A8D9A1 /* Build configuration list for PBXProject "RainAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C30E821EDC97D00A8D9A1 /* Debug */,
+				AB7C30E921EDC97D00A8D9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C30EA21EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C30EB21EDC97D00A8D9A1 /* Debug */,
+				AB7C30EC21EDC97D00A8D9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C30ED21EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C30EE21EDC97D00A8D9A1 /* Debug */,
+				AB7C30EF21EDC97D00A8D9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7C30F021EDC97D00A8D9A1 /* Build configuration list for PBXNativeTarget "RainAlertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7C30F121EDC97D00A8D9A1 /* Debug */,
+				AB7C30F221EDC97D00A8D9A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7C30BA21EDC97C00A8D9A1 /* Project object */;
+}
