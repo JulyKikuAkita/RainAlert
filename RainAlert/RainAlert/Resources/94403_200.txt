@@ -1,0 +1,62 @@
+{
+  "observations": {
+    "location": [
+      {
+        "observation": [
+          {
+            "daylight": "N",
+            "description": "Fog. Cool.",
+            "skyInfo": "21",
+            "skyDescription": "Fog",
+            "temperature": "12.00",
+            "temperatureDesc": "Cool",
+            "comfort": "10.86",
+            "highTemperature": "12.30",
+            "lowTemperature": "10.40",
+            "humidity": "100",
+            "dewPoint": "12.00",
+            "precipitation1H": "*",
+            "precipitation3H": "*",
+            "precipitation6H": "*",
+            "precipitation12H": "*",
+            "precipitation24H": "*",
+            "precipitationDesc": "",
+            "airInfo": "*",
+            "airDescription": "",
+            "windSpeed": "11.12",
+            "windDirection": "150",
+            "windDesc": "Southeast",
+            "windDescShort": "SE",
+            "barometerPressure": "1012.53",
+            "barometerTrend": "",
+            "visibility": "6.44",
+            "snowCover": "*",
+            "icon": "9",
+            "iconName": "dense_fog",
+            "iconLink": "https://weather.cit.api.here.com/static/weather/icon/13.png",
+            "ageMinutes": "18",
+            "activeAlerts": "27",
+            "country": "United States",
+            "state": "California",
+            "city": "San Mateo",
+            "latitude": 37.5398,
+            "longitude": -122.3036,
+            "distance": 5.78,
+            "elevation": 0,
+            "utcTime": "2019-01-16T00:20:00.000-08:00"
+          }
+        ],
+        "country": "United States",
+        "state": "California",
+        "city": "San Mateo",
+        "latitude": 37.53982,
+        "longitude": -122.30357,
+        "distance": 0,
+        "timezone": -8
+      }
+    ]
+  },
+  "feedCreation": "2019-01-16T08:38:49.367Z",
+  "metric": true
+}
+

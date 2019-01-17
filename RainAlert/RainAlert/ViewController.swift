@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
+    private let apiManager = APIManager()
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var zipcodeLabel: UILabel!
@@ -40,6 +41,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         zipcodeLabel.text = "Default"
+        getWeather()
     }
 }
 
+extension ViewController {
+    
+    private func getWeather() {
+        apiManager.getObservations() { (observations, error) in
+            if let error = error {
+                print("Get weather observations error: \(error.localizedDescription)")
+                return
+            }
+            guard let observations = observations else { return }
+            print("Current Weather Object:")
+            print(observations)
+        }
+    }
+    
+}

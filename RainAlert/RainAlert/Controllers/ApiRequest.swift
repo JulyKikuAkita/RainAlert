@@ -17,6 +17,31 @@
 // https://developer.here.com/projects/PROD-048aeff5-06da-46d2-9af5-5b00a86a4256
 
 import Foundation
+
+
 class ApiRequest {
+    let weatherAPIURL = "https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&zipcode=94403&oneobservation=true&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
+    
+    func queryWeather(){
+        guard let url = URL(string: weatherAPIURL) else {return}
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let dataResponse = data,
+                error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: [])
+                print(jsonResponse) //Response result
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+        }
+        task.resume()
+        
+        
+    }
     
 }
