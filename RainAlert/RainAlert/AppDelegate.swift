@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         print("Hello World")
         let apir: ApiRequest = ApiRequest()
-        apir.queryWeather()
+        apir.printObservationJsonArray()
         return true
     }
 

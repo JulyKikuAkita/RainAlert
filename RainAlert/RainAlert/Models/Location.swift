@@ -8,11 +8,11 @@
 
 struct Location: Codable {
     let city: String
+    let observation: [Observation]
     let country: String
     let distance: Int
     let latitude: Double
     let longitude: Double
-    let observation: [Observation]
     let state: String
     let timezone: Int
 }

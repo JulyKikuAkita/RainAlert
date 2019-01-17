@@ -10,10 +10,9 @@ struct Observation: Codable {
     let description: String
     let precipitationDesc: String
     let skyDescription: String
-    let ageMinutes: Int
-    let highTemperature: Double
-    let longitude: Double
+    let temperatureDesc: String
     let snowCover: String
-    let windSpeed: Double
     let windDesc: String
+    let latitude: Double
+    let longitude: Double
 }

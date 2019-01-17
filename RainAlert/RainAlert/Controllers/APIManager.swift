@@ -13,7 +13,7 @@ import Foundation
 class APIManager {
     let hereSampleWeatherAPIURL = "https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&zipcode=94403&oneobservation=true&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
     
-    func getObservations(completion: @escaping (_ observation: Observations?, _ error: Error?) -> Void) {
+    func getObserveOneJsonTopLevel(completion: @escaping (_ observation: ObserveOneJsonTopLevel?, _ error: Error?) -> Void) {
         getJSONFromURL(urlString: hereSampleWeatherAPIURL) { (data, error) in
             guard let data = data, error == nil else {
                 print("Failed to get data")
@@ -51,16 +51,25 @@ extension APIManager {
         task.resume()
     }
     
-    private func createWeatherObjectWith(json: Data, completion: @escaping (_ data: Observations?, _ error: Error?) -> Void) {
+    private func createWeatherObjectWith(json: Data, completion: @escaping (_ data: ObserveOneJsonTopLevel?, _ error: Error?) -> Void) {
         do {
             let decoder = JSONDecoder()
-            let observations = try decoder.decode(Observations.self, from: json)
-            //TODO: Observations mapping error
-            //debugDescription    String    "No value associated with key location (\"location\")."    
-            dump(observations)
-            return completion(observations, nil)
-        } catch let error {
-            print("Error creating current weather from JSON because: \(error.localizedDescription)")
+            let observeOneJsonTopLevel = try decoder.decode(ObserveOneJsonTopLevel.self, from: json)
+            debugPrint(observeOneJsonTopLevel)
+            return completion(observeOneJsonTopLevel, nil)
+        } catch let DecodingError.dataCorrupted(context) {
+            print(context)
+        } catch let DecodingError.keyNotFound(key, context) {
+            print("Key '\(key)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch let DecodingError.valueNotFound(value, context) {
+            print("Value '\(value)' not found:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch let DecodingError.typeMismatch(type, context)  {
+            print("Type '\(type)' mismatch:", context.debugDescription)
+            print("codingPath:", context.codingPath)
+        } catch {
+            print("error: ", error)
             return completion(nil, error)
         }
     }
