@@ -18,7 +18,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        apiManager.getObserveOneJsonTopLevel() { (observeOneJsonTopLevel, error) in
+            guard let topJson = observeOneJsonTopLevel else { return }
+            self.desc = topJson.observations.location[0].observation[0].description
+        }
         //Handle the text field’s user input through delegate callbacks.
         nameTextField.delegate = self
     }
@@ -41,14 +44,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     //MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
-        zipcodeLabel.text = "Retrieving: \(getWeatherDescription())"
+        // completion is async call
+        // need to wait it return to print data
+        //let desc = getWeatherDescription()
+        zipcodeLabel.text = "Retrieving: \(self.desc)"
     }
 }
 
 extension ViewController {
     // TODO: return ObserveOneJsonTopLevel from closure
+    // TODO: handle async Request-Response with completion handler.
     private func getWeatherDescription() -> String {
-        apiManager.getObserveOneJsonTopLevel() { (observeOneJsonTopLevel, error) in
+            apiManager.getObserveOneJsonTopLevel() { (observeOneJsonTopLevel, error) in
             if let error = error {
                 print("Get weather observations error: \(error.localizedDescription)")
                 return
@@ -58,7 +65,6 @@ extension ViewController {
             print(topJson.observations.location[0].observation[0].description)
             self.desc = topJson.observations.location[0].observation[0].description
         }
-        return self.desc //TODO: do not use global var
+        return self.desc
     }
-    
 }
