@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RainAlert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tnV-eo-4H3">
-                                <rect key="frame" x="8" y="40" width="359" height="96.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="F7V-Hx-p6s">
+                                <rect key="frame" x="8" y="28" width="304" height="140.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zip code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-4F-2uX">
                                         <rect key="frame" x="0.0" y="0.0" width="67.5" height="20.5"/>
@@ -26,30 +26,49 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter zip code" borderStyle="roundedRect" placeholder="Enter zip code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-Qq-kir">
-                                        <rect key="frame" x="0.0" y="28.5" width="359" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter zip code" borderStyle="roundedRect" placeholder="Enter zipcode" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cT2-Qq-kir">
+                                        <rect key="frame" x="0.0" y="20.5" width="296" height="30"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="postal-code"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKd-G9-e5T">
+                                        <rect key="frame" x="0.0" y="50.5" width="115" height="30"/>
+                                        <state key="normal" title="Validate Zipcode"/>
+                                        <connections>
+                                            <action selector="validateZipcodeFormat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vzM-K6-TjE"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5Y-bU-VNA">
-                                        <rect key="frame" x="0.0" y="66.5" width="137" height="30"/>
-                                        <state key="normal" title="setDefaultLabelText"/>
+                                        <rect key="frame" x="0.0" y="80.5" width="82" height="30"/>
+                                        <state key="normal" title="GetWeather"/>
                                         <connections>
                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oby-r1-Cuy"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e1t-gg-fSW">
+                                        <rect key="frame" x="0.0" y="110.5" width="124" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRG-Eg-WQO">
+                                                <rect key="frame" x="0.0" y="0.0" width="124" height="30"/>
+                                                <state key="normal" title="Create Local Push"/>
+                                                <connections>
+                                                    <action selector="setLocalPush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="shM-rD-TAk"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="cT2-Qq-kir" secondAttribute="trailing" id="RwT-WK-RIY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cT2-Qq-kir" secondAttribute="trailing" constant="8" id="oRw-Vi-FSd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tnV-eo-4H3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2nL-yd-Uud"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tnV-eo-4H3" secondAttribute="trailing" constant="8" id="IoF-fn-OVa"/>
-                            <constraint firstItem="tnV-eo-4H3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="qzx-IU-eHz"/>
+                            <constraint firstItem="F7V-Hx-p6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Wj5-jA-RzU"/>
+                            <constraint firstItem="F7V-Hx-p6s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YPK-Ru-eip"/>
+                            <constraint firstItem="F7V-Hx-p6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="vX9-ak-VJu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
