@@ -11,7 +11,23 @@
 import Foundation
 
 class APIManager {
-    let hereSampleWeatherAPIURL = "https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&zipcode=94403&oneobservation=true&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
+    var hereSampleWeatherAPIURL = "https://weather.cit.api.here.com/weather/1.0/report.json?product=observation&zipcode=94403&oneobservation=true&app_id=DemoAppId01082013GAL&app_code=AJKnXv84fjrb0KIHawS0Tg"
+    func composeHereURL(product: String, zipcode: String, app_id: String, app_code: String) -> String {
+        let hereDomain = "https://weather.cit.api.here.com/weather/1.0/report.json?"
+        let amp = "&"
+        let url = hereDomain
+        + "product=\(product)" + amp
+        + "zipcode=\(zipcode)" + amp
+        + "oneobservation=true" + amp
+        + "app_id=\(app_id)" + amp
+        + "app_code=\(app_code)"
+        print (url == hereSampleWeatherAPIURL)
+        return url;
+    }
+    
+    func setHereAPIREquestURL(zipcode: Int) {
+        self.hereSampleWeatherAPIURL = composeHereURL(product: "observation", zipcode: String(zipcode), app_id: "DemoAppId01082013GAL", app_code: "AJKnXv84fjrb0KIHawS0Tg")
+    }
     
     func getObserveOneJsonTopLevel(completion: @escaping (_ observation: ObserveOneJsonTopLevel?, _ error: Error?) -> Void) {
         getJSONFromURL(urlString: hereSampleWeatherAPIURL) { (data, error) in
